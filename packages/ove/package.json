@@ -1,5 +1,13 @@
 {
   "name": "@teselagen/ove",
   "version": "0.3.7",
-  "main": "./src/index.js"
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "require": "./index.mjs",
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./style.css": "./style.css"
+  }
 }

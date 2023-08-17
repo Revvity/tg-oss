@@ -10,8 +10,11 @@ import { camelCase } from "lodash";
 import { getPort } from "./getPort";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import path from "node:path";
+import * as packageJson from "./package.json";
 // import million from "million/compiler";
 //vite config for react packages
+
+const dependencyKeys = Object.keys(packageJson.dependencies);
 
 const justSrc = [
   /\/src\/.*\.js$/,
@@ -136,7 +139,7 @@ export default ({ name }: { name: string; dir: string }) =>
                 entry: "src/index.js",
                 name,
                 fileName: "index",
-                formats: ["umd"]
+                formats: ["umd", "es", "cjs"]
                 // Change this to the formats you want to support.
                 // Don't forgot to update your package.json as well.
               }
@@ -145,7 +148,8 @@ export default ({ name }: { name: string; dir: string }) =>
           plugins: [rollupPlugin(justSrc)],
           output: {
             name: camelCase(name)
-          }
+          },
+          external: dependencyKeys
           // External packages that should not be bundled into your library.
           // external:
           //   mode === "demo"
