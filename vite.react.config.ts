@@ -14,7 +14,9 @@ import * as packageJson from "./package.json";
 // import million from "million/compiler";
 //vite config for react packages
 
-const dependencyKeys = Object.keys(packageJson.dependencies);
+const dependencyKeys = Object.keys(packageJson.dependencies).filter(
+  (item) => item !== "node-interval-tree"
+);
 
 const justSrc = [
   /\/src\/.*\.js$/,
