@@ -138,18 +138,32 @@ export default ({ name }: { name: string; dir: string }) =>
                 // Could also be a dictionary or array of multiple entry points.
                 entry: "src/index.js",
                 name,
-                fileName: "index",
-                formats: ["umd", "es", "cjs"]
+                fileName: "index"
                 // Change this to the formats you want to support.
                 // Don't forgot to update your package.json as well.
               }
             }),
         rollupOptions: {
           plugins: [rollupPlugin(justSrc)],
-          output: {
-            name: camelCase(name)
-          },
-          external: dependencyKeys
+          output: [
+            {
+              name: camelCase(name),
+              format: "cjs",
+              sourcemap: true
+            },
+            {
+              name: camelCase(name),
+              format: "es",
+              sourcemap: true
+            },
+            {
+              name: camelCase(name),
+              format: "umd",
+              sourcemap: true
+            }
+          ],
+          external: isDemo ? [] : dependencyKeys
+
           // External packages that should not be bundled into your library.
           // external:
           //   mode === "demo"
