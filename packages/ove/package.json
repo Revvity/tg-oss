@@ -4,8 +4,8 @@
   "main": "./index.js",
   "exports": {
     ".": {
-      "require": "./index.mjs",
-      "import": "./index.js",
+      "require": "./index.js",
+      "import": "./index.mjs",
       "default": "./index.js"
     },
     "./style.css": "./style.css"
