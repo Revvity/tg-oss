@@ -7352,12 +7352,10 @@ const aliasedEnzymes = [
 //   }
 // });
 
-const aliasedEnzymesByName = {};
-
-aliasedEnzymes.forEach(enz => {
-  enz.aliases.forEach(name => {
-    aliasedEnzymesByName[name.toLowerCase()] = { ...enz, name };
-  });
-});
+const aliasedEnzymesByName = aliasedEnzymes.reduce((acc, enz) => {
+  return enz.aliases.reduce((enzAcc, name) => {
+    return { ...enzAcc, [name.toLowerCase()]: { ...enz, name } };
+  }, acc);
+}, {});
 
 export default aliasedEnzymesByName;

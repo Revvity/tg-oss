@@ -17,7 +17,7 @@
     "@risingstack/react-easy-state": "^6.3.0",
     "@teselagen/react-table": "6.10.16",
     "@use-gesture/react": "^10.2.23",
-    "axios": "^0.21.1",
+    "axios": "^1.6.5",
     "browser-or-node": "^2.0.0",
     "classnames": "^2.3.2",
     "clipboard": "2.0.8",
