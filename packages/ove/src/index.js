@@ -1,10 +1,11 @@
 import { FocusStyleManager } from "@blueprintjs/core";
-import { showContextMenu } from "@teselagen/ui";
+import { showContextMenu, startAutoTooltip } from "@teselagen/ui";
 import "./createVectorEditor";
 import "./style.css";
 export { getUserGroupLabel } from "./CutsiteFilter/AdditionalCutsiteInfoDialog";
 window.tgCreateMenu = showContextMenu;
 FocusStyleManager.onlyShowFocusOnTabs();
+startAutoTooltip();
 export { getGaps } from "./AlignmentView/getGaps";
 export { default as createVectorEditor } from "./createVectorEditor";
 export { default as withEditorProps, connectToEditor } from "./withEditorProps";
