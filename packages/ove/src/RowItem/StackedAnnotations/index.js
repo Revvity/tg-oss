@@ -2,7 +2,7 @@ import { getFeatureToColorMap } from "@teselagen/sequence-utils";
 import "./style.css";
 import forEach from "lodash/forEach";
 import React from "react";
-import IntervalTree from "node-interval-tree";
+import { DataIntervalTree } from "node-interval-tree";
 import getXStartAndWidthOfRowAnnotation from "../getXStartAndWidthOfRowAnnotation";
 
 import { getAnnotationRangeType } from "@teselagen/range-utils";
@@ -42,7 +42,7 @@ function StackedAnnotations(props) {
     isStriped
   } = props;
 
-  const iTree = new IntervalTree(Math.ceil(bpsPerRow / 2));
+  const iTree = new DataIntervalTree(Math.ceil(bpsPerRow / 2));
   const InnerCompToUse = InnerComp || PointedAnnotation;
   if (annotationRanges.length === 0) {
     return null;

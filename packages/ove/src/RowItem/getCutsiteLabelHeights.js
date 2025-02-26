@@ -2,7 +2,7 @@
 // for the cutsite label heights to be perfect
 
 import getXStartAndWidthOfRowAnnotation from "./getXStartAndWidthOfRowAnnotation";
-import IntervalTree from "node-interval-tree";
+import { DataIntervalTree } from "node-interval-tree";
 import getYOffset from "../CircularView/getYOffset";
 import forEach from "lodash/forEach";
 
@@ -18,7 +18,7 @@ export default function getCutsiteLabelHeights({
   let counter = 0;
   let maxAnnotationYOffset = 0;
   const rowCenter = rowLength / 2;
-  const iTree = new IntervalTree(rowCenter);
+  const iTree = new DataIntervalTree(rowCenter);
   forEach(annotationRanges, function (annotationRange) {
     counter++;
     if (counter > 50) return;

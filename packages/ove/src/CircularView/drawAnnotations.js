@@ -1,5 +1,5 @@
 import React from "react";
-import IntervalTree from "node-interval-tree";
+import { DataIntervalTree } from "node-interval-tree";
 import { sortBy, noop } from "lodash-es";
 import { getRangeLength } from "@teselagen/range-utils";
 import getRangeAngles from "./getRangeAnglesSpecial";
@@ -47,7 +47,7 @@ function drawAnnotations(props) {
     // visibleAngleRange
   } = props;
   const totalAnnotationHeight = annotationHeight + spaceBetweenAnnotations;
-  const featureITree = new IntervalTree();
+  const featureITree = new DataIntervalTree();
   let maxYOffset = 0;
   const svgGroup = [];
   const labels = {};

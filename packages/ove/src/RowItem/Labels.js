@@ -2,7 +2,7 @@ import React from "react";
 import { onlyUpdateForKeys } from "recompose";
 import withHover from "../helperComponents/withHover";
 import getXStartAndWidthOfRowAnnotation from "./getXStartAndWidthOfRowAnnotation";
-import IntervalTree from "node-interval-tree";
+import { DataIntervalTree } from "node-interval-tree";
 import getYOffset from "../CircularView/getYOffset";
 import { reduce, values, startCase, filter, clamp } from "lodash-es";
 import { getRangeLength } from "@teselagen/range-utils";
@@ -47,7 +47,7 @@ function Labels(props) {
   let maxAnnotationYOffset = 0;
   const annotationsSVG = [];
   const rowCenter = rowLength / 2;
-  const iTree = new IntervalTree(rowCenter);
+  const iTree = new DataIntervalTree(rowCenter);
 
   annotationRanges = values(
     reduce(
