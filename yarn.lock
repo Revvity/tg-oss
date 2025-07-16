@@ -3755,8 +3755,8 @@
   version "0.4.28"
   dependencies:
     "@gmod/gff" "^1.2.1"
-    "@teselagen/range-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-bio-parsers-0.4.28-c173441b-dbb0-47ac-b64e-4bbbdab3a6bf-1749496953484/node_modules/@teselagen/range-utils"
-    "@teselagen/sequence-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-bio-parsers-0.4.28-c173441b-dbb0-47ac-b64e-4bbbdab3a6bf-1749496953484/node_modules/@teselagen/sequence-utils"
+    "@teselagen/range-utils" "file:packages/range-utils"
+    "@teselagen/sequence-utils" "file:packages/sequence-utils"
     bufferpack "^0.0.6"
     color "3.2.1"
     fast-xml-parser "^4.2.5"
@@ -3796,7 +3796,7 @@
 "@teselagen/sequence-utils@file:packages/sequence-utils":
   version "0.3.31"
   dependencies:
-    "@teselagen/range-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-sequence-utils-0.3.31-c323960d-780e-439d-9a37-980d3ce255f8-1749496953482/node_modules/@teselagen/range-utils"
+    "@teselagen/range-utils" "file:packages/range-utils"
     escape-string-regexp "5.0.0"
     jsondiffpatch "0.4.1"
     lodash-es "^4.17.21"
@@ -3814,7 +3814,7 @@
     "@dnd-kit/modifiers" "^7.0.0"
     "@dnd-kit/sortable" "^8.0.0"
     "@dnd-kit/utilities" "3.2.2"
-    "@teselagen/file-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-ui-0.8.6-beta.23-6911a05b-e3dd-48fc-a773-d9d384b13990-1749496953482/node_modules/@teselagen/file-utils"
+    "@teselagen/file-utils" "file:packages/file-utils"
     "@teselagen/react-table" "6.10.18"
     chance "^1.1.11"
     classnames "^2.3.2"
@@ -8484,9 +8484,9 @@ http-proxy-agent@^7.0.0:
     debug "^4.3.4"
 
 http-proxy-middleware@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-3.0.3.tgz#dc1313c75bd00d81e103823802551ee30130ebd1"
-  integrity sha512-usY0HG5nyDUwtqpiZdETNbmKtw3QQ1jwYFZ9wi5iHzX2BcILwQKtYDJPo7XHTsu5Z0B2Hj3W9NNnbd+AjFWjqg==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-3.0.5.tgz#9dcde663edc44079bc5a9c63e03fe5e5d6037fab"
+  integrity sha512-GLZZm1X38BPY4lkXA01jhwxvDoOkkXqjgVyUzVxiEK4iuRu03PZoYHhHRwxnfhQMDuaxi3vVri0YgSro/1oWqg==
   dependencies:
     "@types/http-proxy" "^1.17.15"
     debug "^4.3.6"
