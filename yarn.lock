@@ -3755,8 +3755,8 @@
   version "0.4.28"
   dependencies:
     "@gmod/gff" "^1.2.1"
-    "@teselagen/range-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-bio-parsers-0.4.28-c173441b-dbb0-47ac-b64e-4bbbdab3a6bf-1749496953484/node_modules/@teselagen/range-utils"
-    "@teselagen/sequence-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-bio-parsers-0.4.28-c173441b-dbb0-47ac-b64e-4bbbdab3a6bf-1749496953484/node_modules/@teselagen/sequence-utils"
+    "@teselagen/range-utils" "file:packages/range-utils"
+    "@teselagen/sequence-utils" "file:packages/sequence-utils"
     bufferpack "^0.0.6"
     color "3.2.1"
     fast-xml-parser "^4.2.5"
@@ -3796,7 +3796,7 @@
 "@teselagen/sequence-utils@file:packages/sequence-utils":
   version "0.3.31"
   dependencies:
-    "@teselagen/range-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-sequence-utils-0.3.31-c323960d-780e-439d-9a37-980d3ce255f8-1749496953482/node_modules/@teselagen/range-utils"
+    "@teselagen/range-utils" "file:packages/range-utils"
     escape-string-regexp "5.0.0"
     jsondiffpatch "0.4.1"
     lodash-es "^4.17.21"
@@ -3814,7 +3814,7 @@
     "@dnd-kit/modifiers" "^7.0.0"
     "@dnd-kit/sortable" "^8.0.0"
     "@dnd-kit/utilities" "3.2.2"
-    "@teselagen/file-utils" "file:../../Library/Caches/Yarn/v6/npm-@teselagen-ui-0.8.6-beta.23-6911a05b-e3dd-48fc-a773-d9d384b13990-1749496953482/node_modules/@teselagen/file-utils"
+    "@teselagen/file-utils" "file:packages/file-utils"
     "@teselagen/react-table" "6.10.18"
     chance "^1.1.11"
     classnames "^2.3.2"
@@ -13736,10 +13736,10 @@ vite-tsconfig-paths@^5.1.4:
     globrex "^0.1.2"
     tsconfck "^3.0.3"
 
-vite@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.0.tgz#9dcb543380dab18d8384eb840a76bf30d78633f0"
-  integrity sha512-7dPxoo+WsT/64rDcwoOjk76XHj+TqNTIvHKcuMQ1k4/SeHDaQt5GFAeLYzrimZrMpn/O6DtdI03WUjdxuPM0oQ==
+vite@^6.2.7:
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.7.tgz#699fb6e4b3e65d749480e0087cdbe3f3f0de00fa"
+  integrity sha512-qg3LkeuinTrZoJHHF94coSaTfIPyBYoywp+ys4qu20oSJFbKMYoIJo0FWJT9q6Vp49l6z9IsJRbHdcGtiKbGoQ==
   dependencies:
     esbuild "^0.25.0"
     postcss "^8.5.3"
