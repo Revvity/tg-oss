@@ -952,13 +952,6 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.12.13":
-  version "7.26.7"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.7.tgz#f4e7fe527cd710f8dc0618610b61b4b060c3c341"
-  integrity sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==
-  dependencies:
-    regenerator-runtime "^0.14.0"
-
 "@babel/template@^7.22.5":
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.22.5.tgz#0c8c4d944509875849bd0344ff0050756eefc6ec"
@@ -1190,13 +1183,13 @@
   dependencies:
     "@nx-js/observer-util" "^4.2.2"
 
-"@teselagen/bio-parsers@0.4.23-beta.3":
-  version "0.4.23-beta.3"
-  resolved "https://registry.yarnpkg.com/@teselagen/bio-parsers/-/bio-parsers-0.4.23-beta.3.tgz#fd7935ec73b97349161d91b59f4604b19be95032"
-  integrity sha512-wXlWhP/5U4MZESGzACaor/ij6busTbIpozxsiZlVHx/fPAZSDXhw4vj9TGrmaIVROBDzdTxAeUlikljeOSqT6Q==
+"@teselagen/bio-parsers@0.4.22":
+  version "0.4.22"
+  resolved "https://registry.yarnpkg.com/@teselagen/bio-parsers/-/bio-parsers-0.4.22.tgz#4c99556d6465abc03dfa49daaf9c151646c70511"
+  integrity sha512-oOjs7uayEYS0NubTS4RxxCZvTkgk0OerOpGVVRf8IgWJsX6r5O864OMhy9OAGcXJwI73ZH+NbSkCxRVFHPR5IA==
   dependencies:
     "@gmod/gff" "^1.2.1"
-    "@teselagen/range-utils" "0.3.10"
+    "@teselagen/range-utils" "0.3.7"
     "@teselagen/sequence-utils" "0.3.27"
     buffer "^6.0.3"
     bufferpack "^0.0.6"
@@ -1206,6 +1199,13 @@
     lodash-es "^4.17.21"
     string_decoder "^1.3.0"
     validate.io-nonnegative-integer-array "^1.0.1"
+
+"@teselagen/bounce-loader@0.3.11":
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/@teselagen/bounce-loader/-/bounce-loader-0.3.11.tgz#970154924e6450b3fb3165f973d8d063430ffb32"
+  integrity sha512-YOGBJ4WOtXDF2xVa8zio9KB0Lq67qOMX+Ni3EDAwgiCb1r/xEL1n6PYgSDdA4RIOwz0+QxneugTXHMdV94sP6A==
+  dependencies:
+    react "18.2.0"
 
 "@teselagen/file-utils@0.3.18":
   version "0.3.18"
@@ -1217,8 +1217,10 @@
     lodash-es "^4.17.21"
     papaparse "5.3.2"
 
-"@teselagen/ove@file:../../dist/ove":
-  version "0.7.21-beta.4"
+"@teselagen/ove@0.7.21":
+  version "0.7.21"
+  resolved "https://registry.yarnpkg.com/@teselagen/ove/-/ove-0.7.21.tgz#f6cce5afb7c8e7ed1150af2aaea27d1a10a98405"
+  integrity sha512-4nuFpNEBgz1Bp9tJXbfEdj0RsetRdTd7ztLTjpzgk4U1Wn3qSPZqzkNNEiUhJ9Ocfbhstkqe9Cf1kFbG7mWKaQ==
   dependencies:
     "@blueprintjs/core" "3.54.0"
     "@blueprintjs/datetime" "^3.24.1"
@@ -1230,13 +1232,14 @@
     "@dnd-kit/utilities" "3.2.2"
     "@hello-pangea/dnd" "16.2.0"
     "@risingstack/react-easy-state" "^6.3.0"
-    "@teselagen/bio-parsers" "0.4.23-beta.3"
+    "@teselagen/bio-parsers" "0.4.22"
+    "@teselagen/bounce-loader" "0.3.11"
     "@teselagen/file-utils" "0.3.18"
     "@teselagen/range-utils" "0.3.10"
     "@teselagen/react-list" "0.8.18"
     "@teselagen/react-table" "6.10.16"
-    "@teselagen/sequence-utils" "0.3.28-beta.1"
-    "@teselagen/ui" "0.7.21-beta.2"
+    "@teselagen/sequence-utils" "0.3.27"
+    "@teselagen/ui" "0.7.22"
     "@use-gesture/react" "^10.2.23"
     bluebird "3.7.2"
     bson-objectid "2.0.4"
@@ -1284,7 +1287,7 @@
     react-measure "^2.5.2"
     react-redux "^8.0.5"
     react-rnd "^10.2.4"
-    react-router-dom "5"
+    react-router-dom "4"
     react-sizeme "^2.6.12"
     react-transition-group "^2.4.0"
     recompose "npm:react-recompose@0.31.1"
@@ -1344,21 +1347,10 @@
     jsondiffpatch "0.4.1"
     string-splice "^1.3.0"
 
-"@teselagen/sequence-utils@0.3.28-beta.1":
-  version "0.3.28-beta.1"
-  resolved "https://registry.yarnpkg.com/@teselagen/sequence-utils/-/sequence-utils-0.3.28-beta.1.tgz#c184c692c505fb47e31ccfe0e6ed4eeede176390"
-  integrity sha512-JJKY3z6dVPdxG80JXpQoUXf9CmYlqwJ/UUffg27M1bKB75FIuTjuvqIDVoSIA11x22VqcbLR2PBzvajrig9UGg==
-  dependencies:
-    "@teselagen/range-utils" "0.3.10"
-    bson-objectid "^2.0.4"
-    escape-string-regexp "^5.0.0"
-    jsondiffpatch "0.4.1"
-    string-splice "^1.3.0"
-
-"@teselagen/ui@0.7.21-beta.2":
-  version "0.7.21-beta.2"
-  resolved "https://registry.yarnpkg.com/@teselagen/ui/-/ui-0.7.21-beta.2.tgz#77ea4ad9a0f5ed036389b8a07559097ccf78e1eb"
-  integrity sha512-XA1uBlECfXjWMweo3jrl8gny8prxm5zar4UIHUxcvoe1iVt0gk4DPolUAlRt7EIBT0sHdKvivxtkSVvx32CHRg==
+"@teselagen/ui@0.7.22":
+  version "0.7.22"
+  resolved "https://registry.yarnpkg.com/@teselagen/ui/-/ui-0.7.22.tgz#08b4e87b131f436cc19775a1478271255111fabf"
+  integrity sha512-obv809CYI2U2PKEHgv5rNwTDLA4GpGeKFlnXvMLgXBSmkmoIWMmljE+QRBDkRj8U9CO2/Vn1ZI2Tn00xn8VnSg==
   dependencies:
     "@blueprintjs/core" "3.54.0"
     "@blueprintjs/datetime" "^3.24.1"
@@ -1368,6 +1360,7 @@
     "@dnd-kit/modifiers" "^7.0.0"
     "@dnd-kit/sortable" "^8.0.0"
     "@dnd-kit/utilities" "3.2.2"
+    "@teselagen/bounce-loader" "0.3.11"
     "@teselagen/file-utils" "0.3.18"
     "@teselagen/react-table" "6.10.16"
     bluebird "3.7.2"
@@ -1397,7 +1390,7 @@
     react-markdown "9.0.1"
     react-redux "^8.0.5"
     react-rnd "^10.2.4"
-    react-router-dom "5"
+    react-router-dom "4"
     react-transition-group "^2.4.0"
     recompose "npm:react-recompose@0.31.1"
     redux "^4.1.2"
@@ -3215,7 +3208,7 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-history@^4.9.0:
+history@^4.7.2:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
   integrity sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
@@ -3227,12 +3220,12 @@ history@^4.9.0:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
-hoist-non-react-statics@^2.3.1:
+hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -4877,7 +4870,7 @@ react-dropzone@^11.4.2:
     file-selector "^0.4.0"
     prop-types "^15.8.1"
 
-react-is@^16.13.1, react-is@^16.4.2, react-is@^16.6.0, react-is@^16.7.0:
+react-is@^16.13.1, react-is@^16.4.2, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -4952,33 +4945,30 @@ react-rnd@^10.2.4:
     react-draggable "4.4.5"
     tslib "2.3.1"
 
-react-router-dom@5:
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.3.4.tgz#2ed62ffd88cae6db134445f4a0c0ae8b91d2e5e6"
-  integrity sha512-m4EqFMHv/Ih4kpcBCONHbkT68KoAeHN4p3lAGoNryfHi0dMy0kCzEZakiKRsvg5wHZ/JLrLW8o8KomWiz/qbYQ==
+react-router-dom@4:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
+  integrity sha512-c/MlywfxDdCp7EnB7YfPMOfMD3tOtIjrQlj/CKfNMBxdmpJP8xcz5P/UAFn3JbnQCNUxsHyVVqllF9LhgVyFCA==
   dependencies:
-    "@babel/runtime" "^7.12.13"
-    history "^4.9.0"
+    history "^4.7.2"
+    invariant "^2.2.4"
     loose-envify "^1.3.1"
-    prop-types "^15.6.2"
-    react-router "5.3.4"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
+    prop-types "^15.6.1"
+    react-router "^4.3.1"
+    warning "^4.0.1"
 
-react-router@5.3.4:
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.3.4.tgz#8ca252d70fcc37841e31473c7a151cf777887bb5"
-  integrity sha512-Ys9K+ppnJah3QuaRiLxk+jDWOR1MekYQrlytiXxC1RyfbdsZkS5pvKAzCCr031xHixZwpnsYNT5xysdFHQaYsA==
+react-router@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.3.1.tgz#aada4aef14c809cb2e686b05cee4742234506c4e"
+  integrity sha512-yrvL8AogDh2X42Dt9iknk4wF4V8bWREPirFfS9gLU1huk6qK41sg7Z/1S81jjTrGHxa3B8R3J6xIkDAA6CVarg==
   dependencies:
-    "@babel/runtime" "^7.12.13"
-    history "^4.9.0"
-    hoist-non-react-statics "^3.1.0"
+    history "^4.7.2"
+    hoist-non-react-statics "^2.5.0"
+    invariant "^2.2.4"
     loose-envify "^1.3.1"
     path-to-regexp "^1.7.0"
-    prop-types "^15.6.2"
-    react-is "^16.6.0"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
+    prop-types "^15.6.1"
+    warning "^4.0.1"
 
 react-sizeme@^2.6.12:
   version "2.6.12"
@@ -5000,7 +4990,7 @@ react-transition-group@^2.4.0, react-transition-group@^2.9.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^18.2.0:
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -5992,7 +5982,7 @@ vfile@^6.0.0:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
-warning@^4.0.2, warning@^4.0.3:
+warning@^4.0.1, warning@^4.0.2, warning@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
